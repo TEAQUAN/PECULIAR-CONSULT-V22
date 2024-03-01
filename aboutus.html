@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>PeculiarConsulting</title>
+  <meta name="title" content="Adex">
+  <meta name="description" content="This is a business agency html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/slide-2.png">
+  <link rel="preload" as="image" href="./assets/images/slide-3.png">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+  <style>
+    /* Style for WhatsApp button */
+.whatsapp-button {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 999;
+}
+
+/* Adjust the button style as needed */
+.whatsapp-button img {
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp_float {
+         position: fixed;
+         width: 60px;
+         height: 60px;
+         bottom: 40px;
+         right: 40px;
+         background-color: #25d366;
+         color: #FFF;
+         border-radius: 50px;
+         text-align: center;
+         font-size: 30px;
+         box-shadow: 2px 2px 3px #999;
+         z-index: 100;
+     }
+
+     .whatsapp-icon {
+         margin-top: 16px;
+     }
+ </style>
+
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" class="logo-light"> -->
+
+     <h1>PeculiarConsulting</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+           <h1>PeculiarConsulting</h1>
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./aboutus.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="./OurOffers.html" class="navbar-link">Our Offers</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="./Contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:admin@peculiarconsulting.com" class="contact-link">admin@peculiarconsulting.com</a>
+
+          <a href="tel:001234567890" class="contact-link">Hotline: 240 461 4982</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- <a href="#" class="btn btn-primary">Free Trial</a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">For accurate and reliable accounting services.</h1>
+
+            <p class="hero-text">
+              We’re a creative company that focuses on establishing long-term relationships with customers.
+            </p>
+
+            <div class="btn-wrapper">
+
+
+              <a href="./Contact.html" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/slide-3.png"" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/slie-1.png" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+<!-- 
+   - #ABOUT US
+-->
+
+<section class="section about-us" aria-labelledby="about-us-label">
+    <div class="container">
+ 
+       <p class="section-subtitle" id="about-us-label">About Us</p>
+ 
+       <h2 class="h2 section-title">
+          Welcome to Peculiar Consulting - Your Trusted Accounting Partner
+       </h2>
+ 
+       <p class="section-text">
+          At Peculiar Consulting, we take pride in providing accurate and reliable accounting services to individuals, small businesses, and large organizations. Our dedicated team of experts is committed to delivering excellent results and building long-term relationships with our clients.
+       </p>
+ 
+       <p class="section-text">
+          With over 15 years of experience, we offer tailor-made accounting services, 24/7 support, quick service delivery, and excellent customer service. Our goal is to make your life easier by providing essential tools, top-notch support, and customized solutions to meet your accounting needs.
+       </p>
+
+ 
+    </div>
+ </section>
+
+ 
+ <a
+ href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
+ class="whatsapp_float"
+ target="_blank"
+ rel="noopener noreferrer"
+>
+ <i class="fa fa-whatsapp whatsapp-icon"></i>
+</a>
+
+ <main>
+    <article>
+
+       <!-- 
+          - #OUR PHILOSOPHY
+       -->
+       <section class="section philosophy" aria-labelledby="philosophy-label">
+          <div class="container">
+
+             <p class="section-subtitle" id="philosophy-label">Our Philosophy</p>
+
+             <div class="philosophy-item">
+                <h3 class="h4 philosophy-title">Quality</h3>
+                <p class="section-text">
+                   At PCL, we are proud of our reputation for excellence. Our primary goal is to provide services of the highest quality to our clients.
+                </p>
+             </div>
+
+             <div class="philosophy-item">
+                <h3 class="h4 philosophy-title">Timeliness</h3>
+                <p class="section-text">
+                   A key to client satisfaction is the ability to meet their statutory and critical deadlines. We strive to complete our engagements in sufficient time, and within the agreed deadlines, to achieve maximum impact and meet the needs of decision makers and other users.
+                </p>
+             </div>
+
+             <div class="philosophy-item">
+                <h3 class="h4 philosophy-title">Responsiveness</h3>
+                <p class="section-text">
+                   PCL has effective mechanisms in place to anticipate clients' needs. We strive to respond with innovative, tailored solutions. Keeping communication channels open and listening to our clients is integral to our success.
+                </p>
+             </div>
+
+             <div class="philosophy-item">
+                <h3 class="h4 philosophy-title">Value</h3>
+                <p class="section-text">
+                   Finally, PCL emphasizes affordable services. Combined with our commitment to quality, timeliness, and responsiveness, our affordable prices make us a true value in every sense of the word.
+                </p>
+             </div>
+
+          </div>
+       </section>
+
+       <!-- Include other sections as needed -->
+
+    </article>
+ </main>
+
+ 
+ <main>
+    <article>
+
+       <!-- 
+          - #OUR SPECIALIZATION
+       -->
+       <section class="section specialization" aria-labelledby="specialization-label">
+          <div class="container">
+
+             <p class="section-subtitle" id="specialization-label">Our Specialization</p>
+
+             <ul class="grid-list">
+                <li>
+                   <div class="specialization-card">
+                      <h3 class="h4 card-title">Tax Preparation</h3>
+                   </div>
+                </li>
+                <li>
+                   <div class="specialization-card">
+                      <h3 class="h4 card-title">Business Advisory</h3>
+                   </div>
+                </li>
+                <li>
+                   <div class="specialization-card">
+                      <h3 class="h4 card-title">Bookkeeping</h3>
+                   </div>
+                </li>
+                <li>
+                   <div class="specialization-card">
+                      <h3 class="h4 card-title">Accounting Service</h3>
+                   </div>
+                </li>
+             </ul>
+
+          </div>
+       </section>
+
+       <!-- 
+          - #MEET THE TEAM
+       -->
+       <section class="section meet-the-team" aria-labelledby="meet-the-team-label">
+          <div class="container">
+
+             <p class="section-subtitle" id="meet-the-team-label">Meet the Team</p>
+
+             <p class="section-text">
+                We are a team of dedicated professionals, ready to do whatever it takes to make your business grow.
+             </p>
+
+             <div class="team-member">
+                <h3 class="h4 team-member-name">Peter O. Bejide, CPA, CGMA.</h3>
+                <p class="team-member-position">President</p>
+             </div>
+
+             <div class="team-member">
+                <h3 class="h4 team-member-name">Kike Bejide MSc.</h3>
+                <p class="team-member-position">Director</p>
+             </div>
+
+          </div>
+       </section>
+
+       <!-- 
+          - #WELCOME SECTION
+       -->
+       <section class="welcome" aria-labelledby="welcome-label">
+          <div class="container">
+
+             <p class="section-subtitle" id="welcome-label">More Facts About Us!</p>
+
+             <p class="section-text">
+                PCL was founded in 1999. The Firm provides accounting, tax, and business advisory services to a variety of clients, including Individuals and Corporate entities, including non-profit organizations, and religious institutions.
+             </p>
+
+             <p class="section-text">
+                The President of PCL is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations, including:
+             </p>
+
+             <ul>
+                <li>The American Institute of Certified Public Accountants (AICPA)</li>
+                <li>The National Society of Accountancy (NSA)</li>
+                <li>Chartered Global Management Accountant (CGMA)</li>
+                <li>Greater Washington Society of Certified Public Accountants</li>
+                <li>Virginia Society of Certified Public Accountants</li>
+             </ul>
+
+             <p class="section-text">
+                The Firm has received testimonials from our clients nationwide.
+             </p>
+
+             <h2 class="h2 section-title">Our Mission</h2>
+
+             <p class="section-text">
+                Our mission is to help clients maintain financial viability in the present while taking a proactive approach to achieve future goals. This requires open communication to reach an understanding of our clients' needs through research and sound analysis. PCL is dedicated to meeting these goals with high standards of excellence and professionalism.
+             </p>
+
+             <!-- Include other content as needed -->
+
+          </div>
+       </section>
+
+    </article>
+ </main>
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">24/7 Support</h3>
+
+                <p class="card-text">
+                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
+                  justo.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <!-- <span class="span">Learn More</span> -->
+
+                  <!-- <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> -->
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Quick service delievery</h3>
+
+                <p class="card-text">
+                  We give you the best service without wasting time using State-of-the-art technology and seasoned experts. When you need a fast and effective accounting service, we are your best choice.
+                </p>
+
+                <a href="#" class="btn-text">
+                 
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Excellent customer service</h3>
+
+                <p class="card-text">
+                  We stand as your success partner making sure you are carried along and given maximum support and attention from the start to the finish.
+                </p>
+
+                <!-- <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Essential tools</h3>
+
+                <p class="card-text">
+                  We provide you tools such as financial calculators, tax year checklists, news and links to other useful sites. PCL has over 15 years of valuable experience assisting clients.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+  
+
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Join our community by using our services and grow your business.
+          </h2>
+
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <h2>PeculiarConsulting</h2>
+        </a>
+
+        <p id="copyright" class="footer-text">
+          <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            16509 Kilby Court, Upper Marlboro, MD 20
+          </address>
+        </li>
+
+        <li>
+          <a href="admin@peculiarconsulting.com" class="footer-link">admin@peculiarconsulting.com</a>
+        </li>
+
+        <li>
+          <a href="tel: 240 461 4982" class="footer-link"> Hotline: 240 461 4982 </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    document.getElementById('copyright').textContent = "© Peculiar consulting llc " + new Date().getFullYear();
+</script>
+
+</body>
+
+</html>
