@@ -141,3 +141,26 @@ const initAccordion = function (currentAccordion) {
 }
 
 for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }
+
+
+
+
+const submit = document.getElementsByClassName("contact-form")[0]
+
+submit.addEventListener("submit",(e) => {
+  e.preventDefault();
+  const allname = document.getElementById("allname").value
+const emailInput = document.getElementById("email");  // Retrieve the input element
+const email = emailInput.value; 
+const message = document.getElementById("message").value
+  console.log("submitted")
+  Email.send({
+    SecureToken : "3c206443-de29-4cd1-b005-3c86707c4b38",
+    To : email,
+    From : "Tobiadekunle73@gmail.com",
+    Subject : allname,
+    Body : message
+}).then(
+  message => alert(message)
+);
+})
