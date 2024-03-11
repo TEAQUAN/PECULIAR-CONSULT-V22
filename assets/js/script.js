@@ -153,6 +153,14 @@ submit.addEventListener("submit",(e) => {
 const emailInput = document.getElementById("email");  // Retrieve the input element
 const email = emailInput.value; 
 const message = document.getElementById("message").value
+
+  // Email validation regex pattern
+  const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return; // Do not proceed with sending the email if email is not valid
+  }
   console.log("submitted")
   Email.send({
     SecureToken : "3c206443-de29-4cd1-b005-3c86707c4b38",
